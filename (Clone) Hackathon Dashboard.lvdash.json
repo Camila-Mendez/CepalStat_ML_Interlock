@@ -1,0 +1,1667 @@
+{
+  "datasets": [
+    {
+      "name": "9a097b2c",
+      "displayName": "women_elected_local_government",
+      "queryLines": [
+        "SELECT * FROM workspace.default.women_elected_local_government"
+      ]
+    },
+    {
+      "name": "d6df00eb",
+      "displayName": "education_completion_rate",
+      "queryLines": [
+        "SELECT * FROM workspace.default.education_completion_rate"
+      ]
+    },
+    {
+      "name": "dbce1a3c",
+      "displayName": "feminicide_rate",
+      "queryLines": [
+        "SELECT * FROM workspace.default.feminicide_rate"
+      ]
+    },
+    {
+      "name": "c2a70e50",
+      "displayName": "femininity_index_poverty",
+      "queryLines": [
+        "SELECT * FROM workspace.default.femininity_index_poverty"
+      ]
+    },
+    {
+      "name": "1111ba1d",
+      "displayName": "fiscal_policy_redistributive_impact_gini",
+      "queryLines": [
+        "SELECT * FROM workspace.default.fiscal_policy_redistributive_impact_gini"
+      ]
+    },
+    {
+      "name": "68ad3798",
+      "displayName": "gini_index",
+      "queryLines": [
+        "SELECT * FROM workspace.default.gini_index"
+      ]
+    },
+    {
+      "name": "da65622a",
+      "displayName": "infant_mortality_by_sex",
+      "queryLines": [
+        "SELECT * FROM workspace.default.infant_mortality_by_sex"
+      ]
+    },
+    {
+      "name": "4dc5dbc5",
+      "displayName": "labor_force_participation_by_sex",
+      "queryLines": [
+        "SELECT * FROM workspace.default.labor_force_participation_by_sex"
+      ]
+    },
+    {
+      "name": "1c0bd552",
+      "displayName": "labor_force_participation_by_sex_age_area",
+      "queryLines": [
+        "SELECT * FROM workspace.default.labor_force_participation_by_sex_age_area"
+      ]
+    },
+    {
+      "name": "aa957041",
+      "displayName": "life_expectancy_by_sex",
+      "queryLines": [
+        "SELECT * FROM workspace.default.life_expectancy_by_sex"
+      ]
+    },
+    {
+      "name": "868edd68",
+      "displayName": "literacy_rate_15_24_by_sex",
+      "queryLines": [
+        "SELECT * FROM workspace.default.literacy_rate_15_24_by_sex"
+      ]
+    },
+    {
+      "name": "ce375237",
+      "displayName": "maternal_mortality_ratio",
+      "queryLines": [
+        "SELECT * FROM workspace.default.maternal_mortality_ratio"
+      ]
+    },
+    {
+      "name": "b7d6318a",
+      "displayName": "multidimensional_poverty",
+      "queryLines": [
+        "SELECT * FROM workspace.default.multidimensional_poverty"
+      ]
+    },
+    {
+      "name": "33dcc05f",
+      "displayName": "nini_population_15_24_by_sex",
+      "queryLines": [
+        "SELECT * FROM workspace.default.nini_population_15_24_by_sex"
+      ]
+    },
+    {
+      "name": "4c6a0d2f",
+      "displayName": "population_below_50pct_median_income",
+      "queryLines": [
+        "SELECT * FROM workspace.default.population_below_50pct_median_income"
+      ]
+    },
+    {
+      "name": "25553403",
+      "displayName": "population_by_age_sex",
+      "queryLines": [
+        "SELECT * FROM workspace.default.population_by_age_sex"
+      ]
+    },
+    {
+      "name": "0f874aea",
+      "displayName": "population_by_geographic_area_sex",
+      "queryLines": [
+        "SELECT * FROM workspace.default.population_by_geographic_area_sex"
+      ]
+    },
+    {
+      "name": "e6e39495",
+      "displayName": "population_by_income_bracket",
+      "queryLines": [
+        "SELECT * FROM workspace.default.population_by_income_bracket"
+      ]
+    },
+    {
+      "name": "5264ee50",
+      "displayName": "poverty_below_international_line",
+      "queryLines": [
+        "SELECT * FROM workspace.default.poverty_below_international_line"
+      ]
+    },
+    {
+      "name": "0768d8c3",
+      "displayName": "poverty_below_national_line",
+      "queryLines": [
+        "SELECT * FROM workspace.default.poverty_below_national_line"
+      ]
+    },
+    {
+      "name": "cb13eb72",
+      "displayName": "poverty_by_age_gender_area",
+      "queryLines": [
+        "SELECT * FROM workspace.default.poverty_by_age_gender_area"
+      ]
+    },
+    {
+      "name": "e2133a38",
+      "displayName": "poverty_by_area",
+      "queryLines": [
+        "SELECT * FROM workspace.default.poverty_by_area"
+      ]
+    },
+    {
+      "name": "b5dbe2b6",
+      "displayName": "poverty_by_ethnicity_sex_area",
+      "queryLines": [
+        "SELECT * FROM workspace.default.poverty_by_ethnicity_sex_area"
+      ]
+    },
+    {
+      "name": "27e2d1e6",
+      "displayName": "poverty_national",
+      "queryLines": [
+        "SELECT * FROM workspace.default.poverty_national"
+      ]
+    },
+    {
+      "name": "4172af07",
+      "displayName": "tertiary_enrollment_rate_by_sex",
+      "queryLines": [
+        "SELECT * FROM workspace.default.tertiary_enrollment_rate_by_sex"
+      ]
+    },
+    {
+      "name": "2fb1d3b5",
+      "displayName": "total_population_by_sex",
+      "queryLines": [
+        "SELECT * FROM workspace.default.total_population_by_sex"
+      ]
+    },
+    {
+      "name": "102f09c9",
+      "displayName": "undernourishment_prevalence",
+      "queryLines": [
+        "SELECT * FROM workspace.default.undernourishment_prevalence"
+      ]
+    },
+    {
+      "name": "c2c3ebb9",
+      "displayName": "unpaid_domestic_work_time_by_sex",
+      "queryLines": [
+        "SELECT * FROM workspace.default.unpaid_domestic_work_time_by_sex"
+      ]
+    },
+    {
+      "name": "c1ba758f",
+      "displayName": "urban_salary_ratio_women_men",
+      "queryLines": [
+        "SELECT * FROM workspace.default.urban_salary_ratio_women_men"
+      ]
+    }
+  ],
+  "pages": [
+    {
+      "name": "968d8065",
+      "displayName": "Main",
+      "layout": [
+        {
+          "widget": {
+            "name": "poverty_rate",
+            "queries": [
+              {
+                "name": "main_query",
+                "query": {
+                  "datasetName": "27e2d1e6",
+                  "fields": [
+                    {
+                      "name": "avg(value)",
+                      "expression": "AVG(`value`)"
+                    }
+                  ],
+                  "disaggregated": false
+                }
+              }
+            ],
+            "spec": {
+              "version": 2,
+              "frame": {
+                "title": "Poverty Rate display in %",
+                "showTitle": true
+              },
+              "widgetType": "counter",
+              "encodings": {
+                "value": {
+                  "fieldName": "avg(value)",
+                  "format": {
+                    "type": "number-plain",
+                    "decimalPlaces": {
+                      "type": "exact",
+                      "places": 1
+                    },
+                    "abbreviation": "none"
+                  },
+                  "displayName": "Poverty Rate (%)"
+                }
+              }
+            }
+          },
+          "position": {
+            "x": 0,
+            "y": 4,
+            "width": 6,
+            "height": 4
+          }
+        },
+        {
+          "widget": {
+            "name": "gini_index",
+            "queries": [
+              {
+                "name": "main_query",
+                "query": {
+                  "datasetName": "68ad3798",
+                  "fields": [
+                    {
+                      "name": "avg(value)",
+                      "expression": "AVG(`value`)"
+                    }
+                  ],
+                  "disaggregated": false
+                }
+              }
+            ],
+            "spec": {
+              "version": 2,
+              "frame": {
+                "title": "Gini Index (scale 0 to 1)",
+                "showTitle": true
+              },
+              "widgetType": "counter",
+              "encodings": {
+                "value": {
+                  "fieldName": "avg(value)",
+                  "format": {
+                    "type": "number-plain",
+                    "decimalPlaces": {
+                      "type": "exact",
+                      "places": 3
+                    },
+                    "abbreviation": "none"
+                  },
+                  "displayName": "Gini Coefficient"
+                }
+              }
+            }
+          },
+          "position": {
+            "x": 6,
+            "y": 4,
+            "width": 6,
+            "height": 4
+          }
+        },
+        {
+          "widget": {
+            "name": "poverty_by_area",
+            "queries": [
+              {
+                "name": "main_query",
+                "query": {
+                  "datasetName": "e2133a38",
+                  "fields": [
+                    {
+                      "name": "poverty_and_extreme_poverty",
+                      "expression": "`poverty_and_extreme_poverty`"
+                    },
+                    {
+                      "name": "geographical_area__hs",
+                      "expression": "`geographical_area__hs`"
+                    },
+                    {
+                      "name": "avg(value)",
+                      "expression": "AVG(`value`)"
+                    }
+                  ],
+                  "disaggregated": false
+                }
+              }
+            ],
+            "spec": {
+              "version": 3,
+              "frame": {
+                "title": "Poverty by Geographic Area",
+                "showTitle": true
+              },
+              "widgetType": "bar",
+              "encodings": {
+                "x": {
+                  "fieldName": "geographical_area__hs",
+                  "displayName": "Area",
+                  "scale": {
+                    "type": "categorical"
+                  }
+                },
+                "y": {
+                  "fieldName": "avg(value)",
+                  "format": {
+                    "type": "number-plain",
+                    "decimalPlaces": {
+                      "type": "exact",
+                      "places": 1
+                    },
+                    "abbreviation": "none"
+                  },
+                  "displayName": "Poverty Rate %",
+                  "scale": {
+                    "type": "quantitative"
+                  }
+                },
+                "color": {
+                  "fieldName": "poverty_and_extreme_poverty",
+                  "legend": {
+                    "position": "right"
+                  },
+                  "displayName": "Poverty Type",
+                  "scale": {
+                    "type": "categorical",
+                    "mappings": [
+                      {
+                        "value": "Poverty",
+                        "color": {
+                          "themeColorType": "visualizationColors",
+                          "position": 5
+                        }
+                      },
+                      {
+                        "value": "Extreme poverty",
+                        "color": {
+                          "themeColorType": "visualizationColors",
+                          "position": 4
+                        }
+                      }
+                    ]
+                  }
+                },
+                "label": {
+                  "show": true
+                }
+              }
+            }
+          },
+          "position": {
+            "x": 0,
+            "y": 24,
+            "width": 12,
+            "height": 6
+          }
+        },
+        {
+          "widget": {
+            "name": "poverty_by_age",
+            "queries": [
+              {
+                "name": "main_query",
+                "query": {
+                  "datasetName": "cb13eb72",
+                  "fields": [
+                    {
+                      "name": "poverty_and_extreme_poverty",
+                      "expression": "`poverty_and_extreme_poverty`"
+                    },
+                    {
+                      "name": "age_group_population",
+                      "expression": "`age_group_population`"
+                    },
+                    {
+                      "name": "avg(value)",
+                      "expression": "AVG(`value`)"
+                    }
+                  ],
+                  "disaggregated": false
+                }
+              }
+            ],
+            "spec": {
+              "version": 3,
+              "frame": {
+                "title": "Poverty by Age Group",
+                "showTitle": true
+              },
+              "widgetType": "bar",
+              "encodings": {
+                "x": {
+                  "fieldName": "age_group_population",
+                  "displayName": "Age Group",
+                  "scale": {
+                    "type": "categorical"
+                  }
+                },
+                "y": {
+                  "fieldName": "avg(value)",
+                  "format": {
+                    "type": "number-plain",
+                    "decimalPlaces": {
+                      "type": "exact",
+                      "places": 1
+                    },
+                    "abbreviation": "none"
+                  },
+                  "displayName": "Poverty Rate %",
+                  "scale": {
+                    "type": "quantitative"
+                  }
+                },
+                "color": {
+                  "fieldName": "poverty_and_extreme_poverty",
+                  "legend": {
+                    "position": "right"
+                  },
+                  "displayName": "Poverty Type",
+                  "scale": {
+                    "type": "categorical",
+                    "mappings": [
+                      {
+                        "value": "Poverty",
+                        "color": {
+                          "themeColorType": "visualizationColors",
+                          "position": 5
+                        }
+                      },
+                      {
+                        "value": "Extreme poverty",
+                        "color": {
+                          "themeColorType": "visualizationColors",
+                          "position": 4
+                        }
+                      }
+                    ]
+                  }
+                },
+                "label": {
+                  "show": true
+                }
+              }
+            }
+          },
+          "position": {
+            "x": 0,
+            "y": 8,
+            "width": 12,
+            "height": 6
+          }
+        },
+        {
+          "widget": {
+            "name": "labor_by_age",
+            "queries": [
+              {
+                "name": "main_query",
+                "query": {
+                  "datasetName": "1c0bd552",
+                  "fields": [
+                    {
+                      "name": "geographical_area",
+                      "expression": "`geographical_area`"
+                    },
+                    {
+                      "name": "age_group_by_participation_in_epa__15_60_more_hs",
+                      "expression": "`age_group_by_participation_in_epa__15_60_more_hs`"
+                    },
+                    {
+                      "name": "avg(value)",
+                      "expression": "AVG(`value`)"
+                    }
+                  ],
+                  "disaggregated": false
+                }
+              }
+            ],
+            "spec": {
+              "version": 3,
+              "frame": {
+                "title": "Labor Force Participation by Age & Area",
+                "showTitle": true
+              },
+              "widgetType": "line",
+              "encodings": {
+                "x": {
+                  "fieldName": "age_group_by_participation_in_epa__15_60_more_hs",
+                  "displayName": "Age Group",
+                  "scale": {
+                    "type": "categorical"
+                  }
+                },
+                "y": {
+                  "fieldName": "avg(value)",
+                  "format": {
+                    "type": "number-plain",
+                    "decimalPlaces": {
+                      "type": "exact",
+                      "places": 1
+                    },
+                    "abbreviation": "none"
+                  },
+                  "displayName": "Participation %",
+                  "scale": {
+                    "type": "quantitative"
+                  }
+                },
+                "color": {
+                  "fieldName": "geographical_area",
+                  "legend": {
+                    "position": "right"
+                  },
+                  "displayName": "Geographic Area",
+                  "scale": {
+                    "type": "categorical",
+                    "mappings": [
+                      {
+                        "value": "National",
+                        "color": {
+                          "themeColorType": "visualizationColors",
+                          "position": 2
+                        }
+                      },
+                      {
+                        "value": "Rural",
+                        "color": {
+                          "themeColorType": "visualizationColors",
+                          "position": 3
+                        }
+                      },
+                      {
+                        "value": "Urban",
+                        "color": {
+                          "themeColorType": "visualizationColors",
+                          "position": 1
+                        }
+                      }
+                    ]
+                  }
+                }
+              }
+            }
+          },
+          "position": {
+            "x": 0,
+            "y": 36,
+            "width": 12,
+            "height": 8
+          }
+        },
+        {
+          "widget": {
+            "name": "population_by_age",
+            "queries": [
+              {
+                "name": "main_query",
+                "query": {
+                  "datasetName": "25553403",
+                  "fields": [
+                    {
+                      "name": "five_year_age_groups",
+                      "expression": "`five_year_age_groups`"
+                    },
+                    {
+                      "name": "sum(value)",
+                      "expression": "SUM(`value`)"
+                    }
+                  ],
+                  "disaggregated": false
+                }
+              }
+            ],
+            "spec": {
+              "version": 3,
+              "frame": {
+                "title": "Population Distribution by Age Group",
+                "showTitle": true
+              },
+              "mark": {
+                "colors": [
+                  {
+                    "themeColorType": "visualizationColors",
+                    "position": 1
+                  },
+                  {
+                    "themeColorType": "visualizationColors",
+                    "position": 2
+                  },
+                  {
+                    "themeColorType": "visualizationColors",
+                    "position": 3
+                  },
+                  {
+                    "themeColorType": "visualizationColors",
+                    "position": 4
+                  },
+                  {
+                    "themeColorType": "visualizationColors",
+                    "position": 5
+                  },
+                  {
+                    "themeColorType": "visualizationColors",
+                    "position": 6
+                  },
+                  {
+                    "themeColorType": "visualizationColors",
+                    "position": 7
+                  },
+                  {
+                    "themeColorType": "visualizationColors",
+                    "position": 8
+                  },
+                  {
+                    "themeColorType": "visualizationColors",
+                    "position": 9
+                  },
+                  {
+                    "themeColorType": "visualizationColors",
+                    "position": 10
+                  }
+                ]
+              },
+              "widgetType": "bar",
+              "encodings": {
+                "x": {
+                  "fieldName": "five_year_age_groups",
+                  "displayName": "Age Group",
+                  "scale": {
+                    "type": "categorical",
+                    "sort": {
+                      "by": "custom-order",
+                      "orderedValues": [
+                        "0-4",
+                        "5-9",
+                        "10-14",
+                        "15-19",
+                        "20-24",
+                        "25-29",
+                        "30-34",
+                        "35-39",
+                        "40-44",
+                        "45-49",
+                        "50-54",
+                        "55-59",
+                        "60-64",
+                        "65-69",
+                        "70-74",
+                        "75-79",
+                        "80-84",
+                        "85-89",
+                        "90-94",
+                        "95-99",
+                        "100 and over"
+                      ]
+                    }
+                  }
+                },
+                "y": {
+                  "fieldName": "sum(value)",
+                  "format": {
+                    "type": "number-plain",
+                    "decimalPlaces": {
+                      "type": "exact",
+                      "places": 0
+                    },
+                    "abbreviation": "none"
+                  },
+                  "displayName": "Population",
+                  "scale": {
+                    "type": "quantitative"
+                  }
+                }
+              }
+            }
+          },
+          "position": {
+            "x": 0,
+            "y": 30,
+            "width": 12,
+            "height": 6
+          }
+        },
+        {
+          "widget": {
+            "name": "poverty_trend_over_time",
+            "queries": [
+              {
+                "name": "main_query",
+                "query": {
+                  "datasetName": "27e2d1e6",
+                  "fields": [
+                    {
+                      "name": "poverty_and_extreme_poverty",
+                      "expression": "`poverty_and_extreme_poverty`"
+                    },
+                    {
+                      "name": "years__estandar",
+                      "expression": "`years__estandar`"
+                    },
+                    {
+                      "name": "avg(value)",
+                      "expression": "AVG(`value`)"
+                    }
+                  ],
+                  "disaggregated": false
+                }
+              }
+            ],
+            "spec": {
+              "version": 3,
+              "frame": {
+                "title": "Poverty Trends Over Time",
+                "showTitle": true
+              },
+              "widgetType": "line",
+              "encodings": {
+                "x": {
+                  "fieldName": "years__estandar",
+                  "displayName": "Year",
+                  "scale": {
+                    "type": "quantitative"
+                  }
+                },
+                "y": {
+                  "fieldName": "avg(value)",
+                  "format": {
+                    "type": "number-plain",
+                    "decimalPlaces": {
+                      "type": "exact",
+                      "places": 1
+                    },
+                    "abbreviation": "none"
+                  },
+                  "displayName": "Poverty Rate (%)",
+                  "scale": {
+                    "type": "quantitative"
+                  }
+                },
+                "color": {
+                  "fieldName": "poverty_and_extreme_poverty",
+                  "legend": {
+                    "position": "bottom"
+                  },
+                  "displayName": "Poverty Type",
+                  "scale": {
+                    "type": "categorical",
+                    "mappings": [
+                      {
+                        "value": "Poverty",
+                        "color": {
+                          "themeColorType": "visualizationColors",
+                          "position": 5
+                        }
+                      },
+                      {
+                        "value": "Extreme poverty",
+                        "color": {
+                          "themeColorType": "visualizationColors",
+                          "position": 4
+                        }
+                      }
+                    ]
+                  }
+                }
+              }
+            }
+          },
+          "position": {
+            "x": 0,
+            "y": 14,
+            "width": 12,
+            "height": 10
+          }
+        },
+        {
+          "widget": {
+            "name": "population_new",
+            "queries": [
+              {
+                "name": "main_query",
+                "query": {
+                  "datasetName": "2fb1d3b5",
+                  "fields": [
+                    {
+                      "name": "sum(value)",
+                      "expression": "SUM(`value`)"
+                    }
+                  ],
+                  "filters": [
+                    {
+                      "expression": "`country__estandar` IS NULL OR `country__estandar` NOT IN ('Latin America')"
+                    }
+                  ],
+                  "disaggregated": false
+                }
+              }
+            ],
+            "spec": {
+              "version": 2,
+              "frame": {
+                "title": "Total Population",
+                "showTitle": true
+              },
+              "widgetType": "counter",
+              "encodings": {
+                "value": {
+                  "fieldName": "sum(value)",
+                  "format": {
+                    "type": "number-plain",
+                    "decimalPlaces": {
+                      "type": "exact",
+                      "places": 0
+                    },
+                    "abbreviation": "none"
+                  },
+                  "displayName": "Population"
+                }
+              }
+            }
+          },
+          "position": {
+            "x": 0,
+            "y": 0,
+            "width": 12,
+            "height": 4
+          }
+        }
+      ],
+      "pageType": "PAGE_TYPE_CANVAS",
+      "layoutVersion": "GRID_V1"
+    },
+    {
+      "name": "global_filters",
+      "displayName": "Global Filters",
+      "layout": [
+        {
+          "widget": {
+            "name": "country",
+            "queries": [
+              {
+                "name": "dashboards/01f12f91b305198391ab80f2abc74bf3/datasets/01f12f925ff515a5bf186ee773bde749_country__estandar",
+                "query": {
+                  "datasetName": "2fb1d3b5",
+                  "fields": [
+                    {
+                      "name": "country__estandar",
+                      "expression": "`country__estandar`"
+                    },
+                    {
+                      "name": "country__estandar_associativity",
+                      "expression": "COUNT_IF(`associative_filter_predicate_group`)"
+                    }
+                  ],
+                  "disaggregated": false
+                }
+              },
+              {
+                "name": "dashboards/01f12f91b305198391ab80f2abc74bf3/datasets/01f12f925f5d1f6481d9ad977c199154_country__estandar",
+                "query": {
+                  "datasetName": "27e2d1e6",
+                  "fields": [
+                    {
+                      "name": "country__estandar",
+                      "expression": "`country__estandar`"
+                    },
+                    {
+                      "name": "country__estandar_associativity",
+                      "expression": "COUNT_IF(`associative_filter_predicate_group`)"
+                    }
+                  ],
+                  "disaggregated": false
+                }
+              },
+              {
+                "name": "dashboards/01f12f91b305198391ab80f2abc74bf3/datasets/01f12f9258e7187b8fc42518f6b9298d_country__estandar",
+                "query": {
+                  "datasetName": "68ad3798",
+                  "fields": [
+                    {
+                      "name": "country__estandar",
+                      "expression": "`country__estandar`"
+                    },
+                    {
+                      "name": "country__estandar_associativity",
+                      "expression": "COUNT_IF(`associative_filter_predicate_group`)"
+                    }
+                  ],
+                  "disaggregated": false
+                }
+              },
+              {
+                "name": "dashboards/01f12f91b305198391ab80f2abc74bf3/datasets/01f12f9259ff1cc6a00d56e1578ef9f6_country__estandar",
+                "query": {
+                  "datasetName": "aa957041",
+                  "fields": [
+                    {
+                      "name": "country__estandar",
+                      "expression": "`country__estandar`"
+                    },
+                    {
+                      "name": "country__estandar_associativity",
+                      "expression": "COUNT_IF(`associative_filter_predicate_group`)"
+                    }
+                  ],
+                  "disaggregated": false
+                }
+              },
+              {
+                "name": "dashboards/01f12f91b305198391ab80f2abc74bf3/datasets/01f12f925a4b1c60a6eef0a754876a6a_country__estandar",
+                "query": {
+                  "datasetName": "868edd68",
+                  "fields": [
+                    {
+                      "name": "country__estandar",
+                      "expression": "`country__estandar`"
+                    },
+                    {
+                      "name": "country__estandar_associativity",
+                      "expression": "COUNT_IF(`associative_filter_predicate_group`)"
+                    }
+                  ],
+                  "disaggregated": false
+                }
+              },
+              {
+                "name": "dashboards/01f12f91b305198391ab80f2abc74bf3/datasets/01f12f925970152eb20fc67c8ebc55c6_country__estandar",
+                "query": {
+                  "datasetName": "4dc5dbc5",
+                  "fields": [
+                    {
+                      "name": "country__estandar",
+                      "expression": "`country__estandar`"
+                    },
+                    {
+                      "name": "country__estandar_associativity",
+                      "expression": "COUNT_IF(`associative_filter_predicate_group`)"
+                    }
+                  ],
+                  "disaggregated": false
+                }
+              },
+              {
+                "name": "dashboards/01f12f91b305198391ab80f2abc74bf3/datasets/01f12f92592f1ee0964881a85372829d_country__estandar",
+                "query": {
+                  "datasetName": "da65622a",
+                  "fields": [
+                    {
+                      "name": "country__estandar",
+                      "expression": "`country__estandar`"
+                    },
+                    {
+                      "name": "country__estandar_associativity",
+                      "expression": "COUNT_IF(`associative_filter_predicate_group`)"
+                    }
+                  ],
+                  "disaggregated": false
+                }
+              },
+              {
+                "name": "dashboards/01f12f91b305198391ab80f2abc74bf3/datasets/01f12f925bd612759db1f8c17c1e4f06_country__estandar",
+                "query": {
+                  "datasetName": "33dcc05f",
+                  "fields": [
+                    {
+                      "name": "country__estandar",
+                      "expression": "`country__estandar`"
+                    },
+                    {
+                      "name": "country__estandar_associativity",
+                      "expression": "COUNT_IF(`associative_filter_predicate_group`)"
+                    }
+                  ],
+                  "disaggregated": false
+                }
+              },
+              {
+                "name": "dashboards/01f12f91b305198391ab80f2abc74bf3/datasets/01f12f925eb6188f94bc680ea1069d3b_country__estandar",
+                "query": {
+                  "datasetName": "e2133a38",
+                  "fields": [
+                    {
+                      "name": "country__estandar",
+                      "expression": "`country__estandar`"
+                    },
+                    {
+                      "name": "country__estandar_associativity",
+                      "expression": "COUNT_IF(`associative_filter_predicate_group`)"
+                    }
+                  ],
+                  "disaggregated": false
+                }
+              },
+              {
+                "name": "dashboards/01f12f91b305198391ab80f2abc74bf3/datasets/01f12f925e571c5c99bc262500647a30_country__estandar",
+                "query": {
+                  "datasetName": "cb13eb72",
+                  "fields": [
+                    {
+                      "name": "country__estandar",
+                      "expression": "`country__estandar`"
+                    },
+                    {
+                      "name": "country__estandar_associativity",
+                      "expression": "COUNT_IF(`associative_filter_predicate_group`)"
+                    }
+                  ],
+                  "disaggregated": false
+                }
+              },
+              {
+                "name": "dashboards/01f12f91b305198391ab80f2abc74bf3/datasets/01f12f9259bb15e7a3c66b56bbebe0d7_country__estandar",
+                "query": {
+                  "datasetName": "1c0bd552",
+                  "fields": [
+                    {
+                      "name": "country__estandar",
+                      "expression": "`country__estandar`"
+                    },
+                    {
+                      "name": "country__estandar_associativity",
+                      "expression": "COUNT_IF(`associative_filter_predicate_group`)"
+                    }
+                  ],
+                  "disaggregated": false
+                }
+              },
+              {
+                "name": "dashboards/01f12f91b305198391ab80f2abc74bf3/datasets/01f12f925ca41decacfbb7e9030079c4_country__estandar",
+                "query": {
+                  "datasetName": "25553403",
+                  "fields": [
+                    {
+                      "name": "country__estandar",
+                      "expression": "`country__estandar`"
+                    },
+                    {
+                      "name": "country__estandar_associativity",
+                      "expression": "COUNT_IF(`associative_filter_predicate_group`)"
+                    }
+                  ],
+                  "disaggregated": false
+                }
+              }
+            ],
+            "spec": {
+              "version": 2,
+              "frame": {
+                "title": "Country/Region",
+                "showTitle": true,
+                "showDescription": false
+              },
+              "widgetType": "filter-single-select",
+              "encodings": {
+                "fields": [
+                  {
+                    "fieldName": "country__estandar",
+                    "queryName": "dashboards/01f12f91b305198391ab80f2abc74bf3/datasets/01f12f925ff515a5bf186ee773bde749_country__estandar"
+                  },
+                  {
+                    "fieldName": "country__estandar",
+                    "queryName": "dashboards/01f12f91b305198391ab80f2abc74bf3/datasets/01f12f925f5d1f6481d9ad977c199154_country__estandar"
+                  },
+                  {
+                    "fieldName": "country__estandar",
+                    "queryName": "dashboards/01f12f91b305198391ab80f2abc74bf3/datasets/01f12f9258e7187b8fc42518f6b9298d_country__estandar"
+                  },
+                  {
+                    "fieldName": "country__estandar",
+                    "queryName": "dashboards/01f12f91b305198391ab80f2abc74bf3/datasets/01f12f9259ff1cc6a00d56e1578ef9f6_country__estandar"
+                  },
+                  {
+                    "fieldName": "country__estandar",
+                    "queryName": "dashboards/01f12f91b305198391ab80f2abc74bf3/datasets/01f12f925a4b1c60a6eef0a754876a6a_country__estandar"
+                  },
+                  {
+                    "fieldName": "country__estandar",
+                    "queryName": "dashboards/01f12f91b305198391ab80f2abc74bf3/datasets/01f12f925970152eb20fc67c8ebc55c6_country__estandar"
+                  },
+                  {
+                    "fieldName": "country__estandar",
+                    "queryName": "dashboards/01f12f91b305198391ab80f2abc74bf3/datasets/01f12f92592f1ee0964881a85372829d_country__estandar"
+                  },
+                  {
+                    "fieldName": "country__estandar",
+                    "queryName": "dashboards/01f12f91b305198391ab80f2abc74bf3/datasets/01f12f925bd612759db1f8c17c1e4f06_country__estandar"
+                  },
+                  {
+                    "fieldName": "country__estandar",
+                    "queryName": "dashboards/01f12f91b305198391ab80f2abc74bf3/datasets/01f12f925eb6188f94bc680ea1069d3b_country__estandar"
+                  },
+                  {
+                    "fieldName": "country__estandar",
+                    "queryName": "dashboards/01f12f91b305198391ab80f2abc74bf3/datasets/01f12f925e571c5c99bc262500647a30_country__estandar"
+                  },
+                  {
+                    "fieldName": "country__estandar",
+                    "queryName": "dashboards/01f12f91b305198391ab80f2abc74bf3/datasets/01f12f9259bb15e7a3c66b56bbebe0d7_country__estandar"
+                  },
+                  {
+                    "fieldName": "country__estandar",
+                    "queryName": "dashboards/01f12f91b305198391ab80f2abc74bf3/datasets/01f12f925ca41decacfbb7e9030079c4_country__estandar"
+                  }
+                ]
+              }
+            }
+          },
+          "position": {
+            "x": 0,
+            "y": 0,
+            "width": 1,
+            "height": 2
+          }
+        },
+        {
+          "widget": {
+            "name": "year",
+            "queries": [
+              {
+                "name": "dashboards/01f12f91b305198391ab80f2abc74bf3/datasets/01f12f925ff515a5bf186ee773bde749_years__estandar",
+                "query": {
+                  "datasetName": "2fb1d3b5",
+                  "fields": [
+                    {
+                      "name": "years__estandar",
+                      "expression": "`years__estandar`"
+                    },
+                    {
+                      "name": "years__estandar_associativity",
+                      "expression": "COUNT_IF(`associative_filter_predicate_group`)"
+                    }
+                  ],
+                  "disaggregated": false
+                }
+              },
+              {
+                "name": "dashboards/01f12f91b305198391ab80f2abc74bf3/datasets/01f12f9258e7187b8fc42518f6b9298d_years__estandar",
+                "query": {
+                  "datasetName": "68ad3798",
+                  "fields": [
+                    {
+                      "name": "years__estandar",
+                      "expression": "`years__estandar`"
+                    },
+                    {
+                      "name": "years__estandar_associativity",
+                      "expression": "COUNT_IF(`associative_filter_predicate_group`)"
+                    }
+                  ],
+                  "disaggregated": false
+                }
+              },
+              {
+                "name": "dashboards/01f12f91b305198391ab80f2abc74bf3/datasets/01f12f9259ff1cc6a00d56e1578ef9f6_years__estandar",
+                "query": {
+                  "datasetName": "aa957041",
+                  "fields": [
+                    {
+                      "name": "years__estandar",
+                      "expression": "`years__estandar`"
+                    },
+                    {
+                      "name": "years__estandar_associativity",
+                      "expression": "COUNT_IF(`associative_filter_predicate_group`)"
+                    }
+                  ],
+                  "disaggregated": false
+                }
+              },
+              {
+                "name": "dashboards/01f12f91b305198391ab80f2abc74bf3/datasets/01f12f925a4b1c60a6eef0a754876a6a_years__estandar",
+                "query": {
+                  "datasetName": "868edd68",
+                  "fields": [
+                    {
+                      "name": "years__estandar",
+                      "expression": "`years__estandar`"
+                    },
+                    {
+                      "name": "years__estandar_associativity",
+                      "expression": "COUNT_IF(`associative_filter_predicate_group`)"
+                    }
+                  ],
+                  "disaggregated": false
+                }
+              },
+              {
+                "name": "dashboards/01f12f91b305198391ab80f2abc74bf3/datasets/01f12f925970152eb20fc67c8ebc55c6_years__estandar",
+                "query": {
+                  "datasetName": "4dc5dbc5",
+                  "fields": [
+                    {
+                      "name": "years__estandar",
+                      "expression": "`years__estandar`"
+                    },
+                    {
+                      "name": "years__estandar_associativity",
+                      "expression": "COUNT_IF(`associative_filter_predicate_group`)"
+                    }
+                  ],
+                  "disaggregated": false
+                }
+              },
+              {
+                "name": "dashboards/01f12f91b305198391ab80f2abc74bf3/datasets/01f12f92592f1ee0964881a85372829d_years__estandar",
+                "query": {
+                  "datasetName": "da65622a",
+                  "fields": [
+                    {
+                      "name": "years__estandar",
+                      "expression": "`years__estandar`"
+                    },
+                    {
+                      "name": "years__estandar_associativity",
+                      "expression": "COUNT_IF(`associative_filter_predicate_group`)"
+                    }
+                  ],
+                  "disaggregated": false
+                }
+              },
+              {
+                "name": "dashboards/01f12f91b305198391ab80f2abc74bf3/datasets/01f12f925bd612759db1f8c17c1e4f06_years__estandar",
+                "query": {
+                  "datasetName": "33dcc05f",
+                  "fields": [
+                    {
+                      "name": "years__estandar",
+                      "expression": "`years__estandar`"
+                    },
+                    {
+                      "name": "years__estandar_associativity",
+                      "expression": "COUNT_IF(`associative_filter_predicate_group`)"
+                    }
+                  ],
+                  "disaggregated": false
+                }
+              },
+              {
+                "name": "dashboards/01f12f91b305198391ab80f2abc74bf3/datasets/01f12f925eb6188f94bc680ea1069d3b_years__estandar",
+                "query": {
+                  "datasetName": "e2133a38",
+                  "fields": [
+                    {
+                      "name": "years__estandar",
+                      "expression": "`years__estandar`"
+                    },
+                    {
+                      "name": "years__estandar_associativity",
+                      "expression": "COUNT_IF(`associative_filter_predicate_group`)"
+                    }
+                  ],
+                  "disaggregated": false
+                }
+              },
+              {
+                "name": "dashboards/01f12f91b305198391ab80f2abc74bf3/datasets/01f12f925e571c5c99bc262500647a30_years__estandar",
+                "query": {
+                  "datasetName": "cb13eb72",
+                  "fields": [
+                    {
+                      "name": "years__estandar",
+                      "expression": "`years__estandar`"
+                    },
+                    {
+                      "name": "years__estandar_associativity",
+                      "expression": "COUNT_IF(`associative_filter_predicate_group`)"
+                    }
+                  ],
+                  "disaggregated": false
+                }
+              },
+              {
+                "name": "dashboards/01f12f91b305198391ab80f2abc74bf3/datasets/01f12f9259bb15e7a3c66b56bbebe0d7_years__estandar",
+                "query": {
+                  "datasetName": "1c0bd552",
+                  "fields": [
+                    {
+                      "name": "years__estandar",
+                      "expression": "`years__estandar`"
+                    },
+                    {
+                      "name": "years__estandar_associativity",
+                      "expression": "COUNT_IF(`associative_filter_predicate_group`)"
+                    }
+                  ],
+                  "disaggregated": false
+                }
+              },
+              {
+                "name": "dashboards/01f12f91b305198391ab80f2abc74bf3/datasets/01f12f925ca41decacfbb7e9030079c4_years__estandar",
+                "query": {
+                  "datasetName": "25553403",
+                  "fields": [
+                    {
+                      "name": "years__estandar",
+                      "expression": "`years__estandar`"
+                    },
+                    {
+                      "name": "years__estandar_associativity",
+                      "expression": "COUNT_IF(`associative_filter_predicate_group`)"
+                    }
+                  ],
+                  "disaggregated": false
+                }
+              }
+            ],
+            "spec": {
+              "version": 2,
+              "frame": {
+                "title": "Year",
+                "showTitle": true
+              },
+              "disallowAll": false,
+              "selection": {
+                "defaultSelection": {
+                  "values": {
+                    "dataType": "INTEGER",
+                    "values": [
+                      {
+                        "value": "2026"
+                      }
+                    ]
+                  }
+                }
+              },
+              "widgetType": "filter-single-select",
+              "encodings": {
+                "fields": [
+                  {
+                    "fieldName": "years__estandar",
+                    "queryName": "dashboards/01f12f91b305198391ab80f2abc74bf3/datasets/01f12f925ff515a5bf186ee773bde749_years__estandar"
+                  },
+                  {
+                    "fieldName": "years__estandar",
+                    "queryName": "dashboards/01f12f91b305198391ab80f2abc74bf3/datasets/01f12f9258e7187b8fc42518f6b9298d_years__estandar"
+                  },
+                  {
+                    "fieldName": "years__estandar",
+                    "queryName": "dashboards/01f12f91b305198391ab80f2abc74bf3/datasets/01f12f9259ff1cc6a00d56e1578ef9f6_years__estandar"
+                  },
+                  {
+                    "fieldName": "years__estandar",
+                    "queryName": "dashboards/01f12f91b305198391ab80f2abc74bf3/datasets/01f12f925a4b1c60a6eef0a754876a6a_years__estandar"
+                  },
+                  {
+                    "fieldName": "years__estandar",
+                    "queryName": "dashboards/01f12f91b305198391ab80f2abc74bf3/datasets/01f12f925970152eb20fc67c8ebc55c6_years__estandar"
+                  },
+                  {
+                    "fieldName": "years__estandar",
+                    "queryName": "dashboards/01f12f91b305198391ab80f2abc74bf3/datasets/01f12f92592f1ee0964881a85372829d_years__estandar"
+                  },
+                  {
+                    "fieldName": "years__estandar",
+                    "queryName": "dashboards/01f12f91b305198391ab80f2abc74bf3/datasets/01f12f925bd612759db1f8c17c1e4f06_years__estandar"
+                  },
+                  {
+                    "fieldName": "years__estandar",
+                    "queryName": "dashboards/01f12f91b305198391ab80f2abc74bf3/datasets/01f12f925eb6188f94bc680ea1069d3b_years__estandar"
+                  },
+                  {
+                    "fieldName": "years__estandar",
+                    "queryName": "dashboards/01f12f91b305198391ab80f2abc74bf3/datasets/01f12f925e571c5c99bc262500647a30_years__estandar"
+                  },
+                  {
+                    "fieldName": "years__estandar",
+                    "queryName": "dashboards/01f12f91b305198391ab80f2abc74bf3/datasets/01f12f9259bb15e7a3c66b56bbebe0d7_years__estandar"
+                  },
+                  {
+                    "fieldName": "years__estandar",
+                    "queryName": "dashboards/01f12f91b305198391ab80f2abc74bf3/datasets/01f12f925ca41decacfbb7e9030079c4_years__estandar"
+                  }
+                ]
+              }
+            }
+          },
+          "position": {
+            "x": 1,
+            "y": 0,
+            "width": 1,
+            "height": 2
+          }
+        },
+        {
+          "widget": {
+            "name": "gender",
+            "queries": [
+              {
+                "name": "dashboards/01f12f91b305198391ab80f2abc74bf3/datasets/01f12f925ff515a5bf186ee773bde749_sex",
+                "query": {
+                  "datasetName": "2fb1d3b5",
+                  "fields": [
+                    {
+                      "name": "sex",
+                      "expression": "`sex`"
+                    },
+                    {
+                      "name": "sex_associativity",
+                      "expression": "COUNT_IF(`associative_filter_predicate_group`)"
+                    }
+                  ],
+                  "disaggregated": false
+                }
+              },
+              {
+                "name": "dashboards/01f12f91b305198391ab80f2abc74bf3/datasets/01f12f9259ff1cc6a00d56e1578ef9f6_sex",
+                "query": {
+                  "datasetName": "aa957041",
+                  "fields": [
+                    {
+                      "name": "sex",
+                      "expression": "`sex`"
+                    },
+                    {
+                      "name": "sex_associativity",
+                      "expression": "COUNT_IF(`associative_filter_predicate_group`)"
+                    }
+                  ],
+                  "disaggregated": false
+                }
+              },
+              {
+                "name": "dashboards/01f12f91b305198391ab80f2abc74bf3/datasets/01f12f925a4b1c60a6eef0a754876a6a_sex__estandar",
+                "query": {
+                  "datasetName": "868edd68",
+                  "fields": [
+                    {
+                      "name": "sex__estandar",
+                      "expression": "`sex__estandar`"
+                    },
+                    {
+                      "name": "sex__estandar_associativity",
+                      "expression": "COUNT_IF(`associative_filter_predicate_group`)"
+                    }
+                  ],
+                  "disaggregated": false
+                }
+              },
+              {
+                "name": "dashboards/01f12f91b305198391ab80f2abc74bf3/datasets/01f12f925970152eb20fc67c8ebc55c6_sex__estandar",
+                "query": {
+                  "datasetName": "4dc5dbc5",
+                  "fields": [
+                    {
+                      "name": "sex__estandar",
+                      "expression": "`sex__estandar`"
+                    },
+                    {
+                      "name": "sex__estandar_associativity",
+                      "expression": "COUNT_IF(`associative_filter_predicate_group`)"
+                    }
+                  ],
+                  "disaggregated": false
+                }
+              },
+              {
+                "name": "dashboards/01f12f91b305198391ab80f2abc74bf3/datasets/01f12f92592f1ee0964881a85372829d_sex",
+                "query": {
+                  "datasetName": "da65622a",
+                  "fields": [
+                    {
+                      "name": "sex",
+                      "expression": "`sex`"
+                    },
+                    {
+                      "name": "sex_associativity",
+                      "expression": "COUNT_IF(`associative_filter_predicate_group`)"
+                    }
+                  ],
+                  "disaggregated": false
+                }
+              },
+              {
+                "name": "dashboards/01f12f91b305198391ab80f2abc74bf3/datasets/01f12f925bd612759db1f8c17c1e4f06_sex__estandar",
+                "query": {
+                  "datasetName": "33dcc05f",
+                  "fields": [
+                    {
+                      "name": "sex__estandar",
+                      "expression": "`sex__estandar`"
+                    },
+                    {
+                      "name": "sex__estandar_associativity",
+                      "expression": "COUNT_IF(`associative_filter_predicate_group`)"
+                    }
+                  ],
+                  "disaggregated": false
+                }
+              },
+              {
+                "name": "dashboards/01f12f91b305198391ab80f2abc74bf3/datasets/01f12f925e571c5c99bc262500647a30_sex__estandar",
+                "query": {
+                  "datasetName": "cb13eb72",
+                  "fields": [
+                    {
+                      "name": "sex__estandar",
+                      "expression": "`sex__estandar`"
+                    },
+                    {
+                      "name": "sex__estandar_associativity",
+                      "expression": "COUNT_IF(`associative_filter_predicate_group`)"
+                    }
+                  ],
+                  "disaggregated": false
+                }
+              },
+              {
+                "name": "dashboards/01f12f91b305198391ab80f2abc74bf3/datasets/01f12f9259bb15e7a3c66b56bbebe0d7_sex__estandar",
+                "query": {
+                  "datasetName": "1c0bd552",
+                  "fields": [
+                    {
+                      "name": "sex__estandar",
+                      "expression": "`sex__estandar`"
+                    },
+                    {
+                      "name": "sex__estandar_associativity",
+                      "expression": "COUNT_IF(`associative_filter_predicate_group`)"
+                    }
+                  ],
+                  "disaggregated": false
+                }
+              },
+              {
+                "name": "dashboards/01f12f91b305198391ab80f2abc74bf3/datasets/01f12f925ca41decacfbb7e9030079c4_sex",
+                "query": {
+                  "datasetName": "25553403",
+                  "fields": [
+                    {
+                      "name": "sex",
+                      "expression": "`sex`"
+                    },
+                    {
+                      "name": "sex_associativity",
+                      "expression": "COUNT_IF(`associative_filter_predicate_group`)"
+                    }
+                  ],
+                  "disaggregated": false
+                }
+              }
+            ],
+            "spec": {
+              "version": 2,
+              "frame": {
+                "title": "Gender",
+                "showTitle": true
+              },
+              "disallowAll": true,
+              "selection": {
+                "defaultSelection": {
+                  "values": {
+                    "dataType": "STRING",
+                    "values": [
+                      {
+                        "value": "Both sexes"
+                      }
+                    ]
+                  }
+                }
+              },
+              "widgetType": "filter-single-select",
+              "encodings": {
+                "fields": [
+                  {
+                    "fieldName": "sex",
+                    "queryName": "dashboards/01f12f91b305198391ab80f2abc74bf3/datasets/01f12f925ff515a5bf186ee773bde749_sex"
+                  },
+                  {
+                    "fieldName": "sex",
+                    "queryName": "dashboards/01f12f91b305198391ab80f2abc74bf3/datasets/01f12f9259ff1cc6a00d56e1578ef9f6_sex"
+                  },
+                  {
+                    "fieldName": "sex__estandar",
+                    "queryName": "dashboards/01f12f91b305198391ab80f2abc74bf3/datasets/01f12f925a4b1c60a6eef0a754876a6a_sex__estandar"
+                  },
+                  {
+                    "fieldName": "sex__estandar",
+                    "queryName": "dashboards/01f12f91b305198391ab80f2abc74bf3/datasets/01f12f925970152eb20fc67c8ebc55c6_sex__estandar"
+                  },
+                  {
+                    "fieldName": "sex",
+                    "queryName": "dashboards/01f12f91b305198391ab80f2abc74bf3/datasets/01f12f92592f1ee0964881a85372829d_sex"
+                  },
+                  {
+                    "fieldName": "sex__estandar",
+                    "queryName": "dashboards/01f12f91b305198391ab80f2abc74bf3/datasets/01f12f925bd612759db1f8c17c1e4f06_sex__estandar"
+                  },
+                  {
+                    "fieldName": "sex__estandar",
+                    "queryName": "dashboards/01f12f91b305198391ab80f2abc74bf3/datasets/01f12f925e571c5c99bc262500647a30_sex__estandar"
+                  },
+                  {
+                    "fieldName": "sex__estandar",
+                    "queryName": "dashboards/01f12f91b305198391ab80f2abc74bf3/datasets/01f12f9259bb15e7a3c66b56bbebe0d7_sex__estandar"
+                  },
+                  {
+                    "fieldName": "sex",
+                    "queryName": "dashboards/01f12f91b305198391ab80f2abc74bf3/datasets/01f12f925ca41decacfbb7e9030079c4_sex"
+                  }
+                ]
+              }
+            }
+          },
+          "position": {
+            "x": 2,
+            "y": 0,
+            "width": 1,
+            "height": 2
+          }
+        }
+      ],
+      "pageType": "PAGE_TYPE_GLOBAL_FILTERS",
+      "layoutVersion": "GRID_V1"
+    }
+  ],
+  "uiSettings": {
+    "theme": {
+      "widgetHeaderAlignment": "ALIGNMENT_UNSPECIFIED"
+    },
+    "applyModeEnabled": false
+  }
+}
