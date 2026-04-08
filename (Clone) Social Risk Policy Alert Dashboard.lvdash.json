@@ -1,0 +1,434 @@
+{
+  "datasets": [
+    {
+      "name": "chronic_risk_countries",
+      "displayName": "Chronic Risk Countries",
+      "queryLines": [
+        "SELECT\n",
+        "  country,\n",
+        "  COUNT(*) as total_years_tracked,\n",
+        "  SUM(\n",
+        "    CASE\n",
+        "      WHEN social_risk_level = 'High Risk' THEN 1\n",
+        "      ELSE 0\n",
+        "    END\n",
+        "  ) as years_in_high_risk,\n",
+        "  ROUND(\n",
+        "    100.0\n",
+        "      * SUM(\n",
+        "        CASE\n",
+        "          WHEN social_risk_level = 'High Risk' THEN 1\n",
+        "          ELSE 0\n",
+        "        END\n",
+        "      )\n",
+        "      / COUNT(*),\n",
+        "    1\n",
+        "  ) as pct_years_high_risk,\n",
+        "  ROUND(AVG(social_risk_score), 3) as avg_social_risk_score,\n",
+        "  ROUND(MAX(social_risk_score), 3) as peak_risk_score,\n",
+        "  MAX(\n",
+        "    CASE\n",
+        "      WHEN social_risk_level = 'High Risk' THEN year\n",
+        "    END\n",
+        "  ) as most_recent_high_risk_year,\n",
+        "  CASE\n",
+        "    WHEN AVG(social_risk_score) > 0.6 THEN '🔴 Chronic High Risk'\n",
+        "    WHEN\n",
+        "      SUM(\n",
+        "        CASE\n",
+        "          WHEN social_risk_level = 'High Risk' THEN 1\n",
+        "          ELSE 0\n",
+        "        END\n",
+        "      ) >= 3\n",
+        "    THEN\n",
+        "      '🟡 Recurring High Risk'\n",
+        "    ELSE '🟢 Stable'\n",
+        "  END as attention_priority\n",
+        "FROM\n",
+        "  workspace.default.social_risk_dashboard\n",
+        "GROUP BY\n",
+        "  country\n",
+        "ORDER BY\n",
+        "  avg_social_risk_score DESC"
+      ]
+    },
+    {
+      "name": "current_risk_snapshot",
+      "displayName": "Current Risk Snapshot",
+      "queryLines": [
+        "SELECT\n",
+        "  country,\n",
+        "  year,\n",
+        "  ROUND(social_risk_score, 3) as social_risk_score,\n",
+        "  social_risk_level,\n",
+        "  ROUND(gini_risk_score, 2) as gini_risk,\n",
+        "  ROUND(poverty_risk_score, 2) as poverty_risk,\n",
+        "  ROUND(mortality_risk_score, 2) as mortality_risk\n",
+        "FROM\n",
+        "  workspace.default.social_risk_dashboard\n",
+        "WHERE\n",
+        "  year\n",
+        "    = (\n",
+        "      SELECT\n",
+        "        MAX(year)\n",
+        "      FROM\n",
+        "        workspace.default.social_risk_dashboard\n",
+        "    )\n",
+        "ORDER BY\n",
+        "  social_risk_score DESC"
+      ]
+    },
+    {
+      "name": "risk_trend_5yr",
+      "displayName": "5-Year Risk Trend",
+      "queryLines": [
+        "WITH recent_years AS (\n",
+        "  SELECT DISTINCT\n",
+        "    year\n",
+        "  FROM\n",
+        "    workspace.default.social_risk_dashboard\n",
+        "  ORDER BY\n",
+        "    year DESC\n",
+        "  LIMIT 5\n",
+        ")\n",
+        "SELECT\n",
+        "  country,\n",
+        "  year,\n",
+        "  ROUND(social_risk_score, 3) as social_risk_score,\n",
+        "  social_risk_level\n",
+        "FROM\n",
+        "  workspace.default.social_risk_dashboard\n",
+        "WHERE\n",
+        "  year IN (\n",
+        "    SELECT\n",
+        "      year\n",
+        "    FROM\n",
+        "      recent_years\n",
+        "  )\n",
+        "ORDER BY\n",
+        "  country,\n",
+        "  year"
+      ]
+    }
+  ],
+  "pages": [
+    {
+      "name": "d7bfe0d7",
+      "displayName": "Page 1",
+      "layout": [
+        {
+          "widget": {
+            "name": "current_risk_bar",
+            "queries": [
+              {
+                "name": "main_query",
+                "query": {
+                  "datasetName": "current_risk_snapshot",
+                  "fields": [
+                    {
+                      "name": "social_risk_level",
+                      "expression": "`social_risk_level`"
+                    },
+                    {
+                      "name": "country",
+                      "expression": "`country`"
+                    },
+                    {
+                      "name": "sum(social_risk_score)",
+                      "expression": "SUM(`social_risk_score`)"
+                    }
+                  ],
+                  "disaggregated": false
+                }
+              }
+            ],
+            "spec": {
+              "version": 3,
+              "frame": {
+                "title": "Latest Available Data (2022)",
+                "showTitle": true
+              },
+              "widgetType": "bar",
+              "encodings": {
+                "x": {
+                  "fieldName": "country",
+                  "displayName": "Country",
+                  "scale": {
+                    "type": "categorical"
+                  }
+                },
+                "y": {
+                  "fieldName": "sum(social_risk_score)",
+                  "displayName": "Social Risk Score",
+                  "scale": {
+                    "type": "quantitative"
+                  }
+                },
+                "color": {
+                  "fieldName": "social_risk_level",
+                  "legend": {
+                    "position": "right"
+                  },
+                  "displayName": "Risk Level",
+                  "scale": {
+                    "type": "categorical",
+                    "mappings": [
+                      {
+                        "value": "Low Risk",
+                        "color": {
+                          "themeColorType": "visualizationColors",
+                          "position": 3
+                        }
+                      }
+                    ]
+                  }
+                },
+                "label": {
+                  "show": true
+                }
+              }
+            }
+          },
+          "position": {
+            "x": 0,
+            "y": 7,
+            "width": 6,
+            "height": 8
+          }
+        },
+        {
+          "widget": {
+            "name": "trend_line",
+            "queries": [
+              {
+                "name": "main_query",
+                "query": {
+                  "datasetName": "risk_trend_5yr",
+                  "fields": [
+                    {
+                      "name": "country",
+                      "expression": "`country`"
+                    },
+                    {
+                      "name": "year",
+                      "expression": "`year`"
+                    },
+                    {
+                      "name": "avg(social_risk_score)",
+                      "expression": "AVG(`social_risk_score`)"
+                    }
+                  ],
+                  "disaggregated": false
+                }
+              }
+            ],
+            "spec": {
+              "version": 3,
+              "frame": {
+                "title": "",
+                "showTitle": false
+              },
+              "widgetType": "line",
+              "encodings": {
+                "x": {
+                  "fieldName": "year",
+                  "displayName": "Year",
+                  "scale": {
+                    "type": "quantitative"
+                  }
+                },
+                "y": {
+                  "fieldName": "avg(social_risk_score)",
+                  "displayName": "Social Risk Score",
+                  "scale": {
+                    "type": "quantitative"
+                  }
+                },
+                "color": {
+                  "fieldName": "country",
+                  "legend": {
+                    "position": "right"
+                  },
+                  "displayName": "Country",
+                  "scale": {
+                    "type": "categorical",
+                    "mappings": [
+                      {
+                        "value": "Brazil",
+                        "color": {
+                          "themeColorType": "visualizationColors",
+                          "position": 6
+                        }
+                      }
+                    ]
+                  }
+                }
+              }
+            }
+          },
+          "position": {
+            "x": 6,
+            "y": 7,
+            "width": 6,
+            "height": 8
+          }
+        },
+        {
+          "widget": {
+            "name": "chronic_table",
+            "queries": [
+              {
+                "name": "main_query",
+                "query": {
+                  "datasetName": "chronic_risk_countries",
+                  "fields": [
+                    {
+                      "name": "country",
+                      "expression": "`country`"
+                    },
+                    {
+                      "name": "attention_priority",
+                      "expression": "`attention_priority`"
+                    },
+                    {
+                      "name": "total_years_tracked",
+                      "expression": "`total_years_tracked`"
+                    },
+                    {
+                      "name": "years_in_high_risk",
+                      "expression": "`years_in_high_risk`"
+                    },
+                    {
+                      "name": "pct_years_high_risk",
+                      "expression": "`pct_years_high_risk`"
+                    },
+                    {
+                      "name": "avg_social_risk_score",
+                      "expression": "`avg_social_risk_score`"
+                    },
+                    {
+                      "name": "peak_risk_score",
+                      "expression": "`peak_risk_score`"
+                    },
+                    {
+                      "name": "most_recent_high_risk_year",
+                      "expression": "`most_recent_high_risk_year`"
+                    }
+                  ],
+                  "disaggregated": true
+                }
+              }
+            ],
+            "spec": {
+              "version": 2,
+              "rowsPerPage": 25,
+              "frame": {
+                "title": "Which countries need sustained attention?",
+                "showTitle": false
+              },
+              "widgetType": "table",
+              "encodings": {
+                "columns": [
+                  {
+                    "fieldName": "country",
+                    "displayName": "Country"
+                  },
+                  {
+                    "fieldName": "attention_priority",
+                    "displayName": "Priority"
+                  },
+                  {
+                    "fieldName": "total_years_tracked",
+                    "displayName": "Years Tracked"
+                  },
+                  {
+                    "fieldName": "years_in_high_risk",
+                    "displayName": "High Risk Years"
+                  },
+                  {
+                    "fieldName": "pct_years_high_risk",
+                    "displayName": "% High Risk"
+                  },
+                  {
+                    "fieldName": "avg_social_risk_score",
+                    "displayName": "Avg Risk Score"
+                  },
+                  {
+                    "fieldName": "peak_risk_score",
+                    "displayName": "Peak Risk"
+                  },
+                  {
+                    "fieldName": "most_recent_high_risk_year",
+                    "displayName": "Recent High Risk Year"
+                  }
+                ]
+              }
+            }
+          },
+          "position": {
+            "x": 0,
+            "y": 1,
+            "width": 12,
+            "height": 5
+          }
+        },
+        {
+          "widget": {
+            "name": "f0b0b0b5",
+            "multilineTextboxSpec": {
+              "lines": [
+                "# **Which countries need sustained attention?**"
+              ]
+            }
+          },
+          "position": {
+            "x": 0,
+            "y": 0,
+            "width": 12,
+            "height": 1
+          }
+        },
+        {
+          "widget": {
+            "name": "d7ae41de",
+            "multilineTextboxSpec": {
+              "lines": [
+                "# Social Risk Status "
+              ]
+            }
+          },
+          "position": {
+            "x": 0,
+            "y": 6,
+            "width": 6,
+            "height": 1
+          }
+        },
+        {
+          "widget": {
+            "name": "99753c32",
+            "multilineTextboxSpec": {
+              "lines": [
+                "# Is risk increasing or decreasing?"
+              ]
+            }
+          },
+          "position": {
+            "x": 6,
+            "y": 6,
+            "width": 6,
+            "height": 1
+          }
+        }
+      ],
+      "pageType": "PAGE_TYPE_CANVAS",
+      "layoutVersion": "GRID_V1"
+    }
+  ],
+  "uiSettings": {
+    "theme": {
+      "widgetHeaderAlignment": "ALIGNMENT_UNSPECIFIED"
+    },
+    "applyModeEnabled": false
+  }
+}
